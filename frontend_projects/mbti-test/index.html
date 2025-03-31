@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>MBTI 테스트</h1>
+
+    <form id="quiz-form">
+    <div class="container">
+        <div class="question">
+            <h2>1. 아침에 일어나자마자 가장 먼저 하는 일은?</h2>
+           <label><input type="radio" name="q1" value="E">휴대폰 확인하기</label>
+           <label><input type="radio" name="q1" value="I">커피 마시기</label>
+           <label><input type="radio" name="q1" value="S">운동 하기</label>
+           <label><input type="radio" name="q1" value="N">잠 더 하기</label>
+        </div>
+
+        <div class="question">
+            <h2>2. 주말에 주로 하는 일은?</h2>
+            <label><input type="radio" name="q2" value="E">친구 만나기</label>
+            <label><input type="radio" name="q2" value="I">집에서 쉬기</label>
+            <label><input type="radio" name="q2" value="S">여행 가기</label>
+            <label><input type="radio" name="q2" value="N">취미 활동 하기</label>
+        </div>
+
+        <div class="question">
+            <h2>3. 일을 할때 가장 중요한 것은?</h2>
+            <label><input type="radio" name="q3" value="E">효율성</label>
+            <label><input type="radio" name="q3" value="I">팀워크</label>
+            <label><input type="radio" name="q3" value="S">계획성</label>
+            <label><input type="radio" name="q3" value="N">유연성</label>
+        </div>
+
+        <div class="question">
+            <h2>4. 어떤 결정을 내릴 때, 당신의 기준은</h2>
+            <label><input type="radio" name="q4" value="J">논리적인 분석</label>
+            <label><input type="radio" name="q4" value="P">감정적인 반응</label>
+            <label><input type="radio" name="q4" value="T">규칙을 따름</label>
+            <label><input type="radio" name="q4" value="F">상황에 따른 대응</label>
+        </div>
+
+        <div class="question">
+            <h2>5. 어떤 상황에서 가장 스트레스를 받나요?</h2>
+            <label><input type="radio" name="q5" value="J">계획이 틀어질 때</label>
+            <label><input type="radio" name="q5" value="P">갑작스러운 일이 생길 때</label>
+            <label><input type="radio" name="q5" value="T">비효율적인 일을 할 때</label>
+            <label><input type="radio" name="q5" value="F">다른 사람과 갈등이 생길 때</label>
+        </div>
+    </div>
+  </form>
+  <button class="submit_button" onclick="calculateResult()">결과 확인하기</button>
+  <div id="result" class="result hide">
+    <h3>당신의 MBTI 유형은</h3>
+    <p id="result-text"></p> <!-- 결과가 표시될 영역 -->
+    <button id="restart-button" onclick="resetQuiz()">다시 시작하기</button>
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
